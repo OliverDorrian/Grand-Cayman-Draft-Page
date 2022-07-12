@@ -11,7 +11,7 @@ body {
     margin: 0;
     background-color: #f2f2f2;
     font-family: 'Montserrat', sans-serif;
-        background-size: 100%;
+    background-size: 100%;
 }
 
 #landing-img {
@@ -53,8 +53,10 @@ body {
 
 .overlay-element {
     position: absolute;
-    width: 150px; /* controls the length of the borders */
-    height: 100px;  /* controls the height of the borders */
+    width: 150px;
+    /* controls the length of the borders */
+    height: 100px;
+    /* controls the height of the borders */
 }
 
 .overlay .top-left {
@@ -88,7 +90,7 @@ body {
     right: var(--border-space);
 }
 
-#main-page { 
+#main-page {
     min-height: 100vh;
     width: 70%;
     max-width: 1800px;
@@ -207,7 +209,7 @@ blockquote:after {
 }
 
 .faq__content {
-    padding-top: 30px; 
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -224,28 +226,36 @@ summary {
     cursor: pointer;
     position: relative;
 }
-details[open] summary ~ * {
+
+details[open] summary~* {
     animation: sweep .10s ease-in-out;
 }
 
 @keyframes sweep {
-    0%    {opacity: 0; margin-top: -10px}
-    100%  {opacity: 1; margin-top: 0px}
+    0% {
+        opacity: 0;
+        margin-top: -10px
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0px
+    }
 }
 
-details > summary::after {
+details>summary::after {
     position: absolute;
     content: "+";
     right: 20px;
 }
 
-details[open] > summary::after {
+details[open]>summary::after {
     position: absolute;
     content: "-";
     right: 20px;
 }
 
-details > summary::-webkit-details-marker {
+details>summary::-webkit-details-marker {
     display: none;
 }
 
@@ -260,30 +270,29 @@ details > summary::-webkit-details-marker {
 }
 
 .blog-box {
+    border: 1px solid black;
+    cursor: pointer;
     margin-bottom: 2.5%;
-    display: flex;
     flex-direction: column;
     text-align: justify;
     justify-content: flex-end;
 }
 
 .blog-box img {
-    padding: 20px;
-
-    border: 1px solid black;
     border-bottom: 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 600px;
-    max-height: 600px;
+    max-height: 550px;
     width: 100%;
     height: 100%;
 }
 
 .blog-box-description {
+    display: block;
+    flex-grow: 1;
+    flex-direction: column;
     padding: 20px;
-    border: 1px solid black;
     border-top: 0;
 }
 
@@ -302,6 +311,54 @@ details > summary::-webkit-details-marker {
     margin-left: auto;
     margin-right: auto;
     max-width: 600px;
-
     font-size: 1.5em;
+}
+
+.box-full {
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.flex-middle {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.flex-middle button {
+    width: 300px;
+    height: 50px;
+    background: white;
+    color: #000;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+.flex-middle button:hover {
+    background: black;
+    color: #fff;
+}
+
+.ai-font-phone:before {
+    content: "📱";
+}
+
+#content strong {
+    font-weight: bolder;
+}
+
+.blog-video {
+    width: 100%;
+    height: 60vh;
+    border: 0;
+}
+
+.blog-video iframe {
+    width: 100%;
+    height: 60vh;
+    border: 0;
 }
