@@ -18,7 +18,7 @@ body {
 }
 
 .page-id-26 #landing-img {
-    background-image: url("azzedine-rouichi-E8AcOg4NyDo-unsplash.jpg");
+    background-image: url("http://oasis-land-newcom.rs3n.aios-staging.com/wp-content/uploads/2022/07/azzedine-rouichi-E8AcOg4NyDo-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100vh;
@@ -27,7 +27,8 @@ body {
 
 .page-id-26 #landing-text {
     color: white;
-    width: 100%;
+    width: 95%;
+    margin-left: 3%;
     text-align: center;
     position: absolute;
     top: 30vh;
@@ -374,6 +375,9 @@ body {
 
 .page-id-26 .box-full {
     padding: 30px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
     width: 100%;
     text-align: center;
 }
@@ -429,8 +433,30 @@ body {
 
 
 @media only screen and (max-width: 1842px) {
-    .box-60-40 {
+    .page-id-26 .box-60-40 {
         width: 100% !important;
         flex-direction: column !important;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .page-id-26 .blog-paragraph p {
+        margin-left: 20px;
+        text-align: justify;
+        font-size: 1.5em;
+    }
+
+    .page-id-26 #landing-text h1 {
+        font-size: 4em;
+        margin: 0;
+    }
+
+    .page-id-26#landing-text h2 {
+        font-size: 2em;
+    }
+
+    .page-id-26 #landing-text h4 {
+        font-size: 2em;
+    }
+
 }
