@@ -181,7 +181,6 @@ body {
 }
 
 .page-id-26 .blog-paragraph p {
-    margin-left: 20px;
     text-align: justify;
     font-size: 2em;
 }
@@ -250,7 +249,7 @@ body {
     margin-top: 1em;
 }
 
-.page-id-26blockquote:after {
+.page-id-26 blockquote:after {
     content: "''";
     position: absolute;
     top: 50%;
@@ -268,7 +267,6 @@ body {
 }
 
 .page-id-26 .faq__content {
-    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -441,7 +439,6 @@ body {
 
 @media only screen and (max-width: 768px) {
     .page-id-26 .blog-paragraph p {
-        margin-left: 20px;
         text-align: justify;
         font-size: 1.5em;
     }
